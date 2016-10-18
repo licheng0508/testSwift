@@ -15,6 +15,11 @@
 		5A7845AA1DAA253F0036409F /* LLMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7845A91DAA253F0036409F /* LLMessageTableViewController.swift */; };
 		5A7845AC1DAA255C0036409F /* LLDiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7845AB1DAA255C0036409F /* LLDiscoverTableViewController.swift */; };
 		5A7845AE1DAA25680036409F /* LLProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7845AD1DAA25680036409F /* LLProfileTableViewController.swift */; };
+		5AA6D2221DB4A685009E511B /* TitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA6D2211DB4A685009E511B /* TitleButton.swift */; };
+		5AA6D2251DB4C162009E511B /* LLPopover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AA6D2241DB4C162009E511B /* LLPopover.storyboard */; };
+		5AA6D2281DB4C538009E511B /* LLPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA6D2271DB4C538009E511B /* LLPopoverViewController.swift */; };
+		5AA6D22A1DB4C589009E511B /* LLPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA6D2291DB4C589009E511B /* LLPresentationController.swift */; };
+		5AA6D22C1DB4CEC2009E511B /* LLPresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA6D22B1DB4CEC2009E511B /* LLPresentationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		5A7845A91DAA253F0036409F /* LLMessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLMessageTableViewController.swift; sourceTree = "<group>"; };
 		5A7845AB1DAA255C0036409F /* LLDiscoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLDiscoverTableViewController.swift; sourceTree = "<group>"; };
 		5A7845AD1DAA25680036409F /* LLProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLProfileTableViewController.swift; sourceTree = "<group>"; };
+		5AA6D2211DB4A685009E511B /* TitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleButton.swift; sourceTree = "<group>"; };
+		5AA6D2241DB4C162009E511B /* LLPopover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LLPopover.storyboard; sourceTree = "<group>"; };
+		5AA6D2271DB4C538009E511B /* LLPopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLPopoverViewController.swift; sourceTree = "<group>"; };
+		5AA6D2291DB4C589009E511B /* LLPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLPresentationController.swift; sourceTree = "<group>"; };
+		5AA6D22B1DB4CEC2009E511B /* LLPresentationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLPresentationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				5A45769F1DAF9013004B9763 /* UIBarButtonItem+Extension.swift */,
+				5AA6D2211DB4A685009E511B /* TitleButton.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -100,6 +111,7 @@
 		5A7845A01DA9DCC30036409F /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				5AA6D2231DB4C12F009E511B /* Popover */,
 				5A7845A71DAA25090036409F /* LLHomeTableViewController.swift */,
 			);
 			path = Home;
@@ -135,6 +147,17 @@
 				5A45769E1DAF8F82004B9763 /* Category */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		5AA6D2231DB4C12F009E511B /* Popover */ = {
+			isa = PBXGroup;
+			children = (
+				5AA6D2241DB4C162009E511B /* LLPopover.storyboard */,
+				5AA6D2271DB4C538009E511B /* LLPopoverViewController.swift */,
+				5AA6D2291DB4C589009E511B /* LLPresentationController.swift */,
+				5AA6D22B1DB4CEC2009E511B /* LLPresentationManager.swift */,
+			);
+			path = Popover;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AA6D2251DB4C162009E511B /* LLPopover.storyboard in Resources */,
 				5A3986761D9BA843007872F6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,8 +232,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AA6D2281DB4C538009E511B /* LLPopoverViewController.swift in Sources */,
+				5AA6D22A1DB4C589009E511B /* LLPresentationController.swift in Sources */,
 				5A7845A61DA9DD260036409F /* LLMainViewController.swift in Sources */,
 				5A7845A81DAA25090036409F /* LLHomeTableViewController.swift in Sources */,
+				5AA6D22C1DB4CEC2009E511B /* LLPresentationManager.swift in Sources */,
+				5AA6D2221DB4A685009E511B /* TitleButton.swift in Sources */,
 				5A39866F1D9BA843007872F6 /* AppDelegate.swift in Sources */,
 				5A4576A01DAF9013004B9763 /* UIBarButtonItem+Extension.swift in Sources */,
 				5A7845AC1DAA255C0036409F /* LLDiscoverTableViewController.swift in Sources */,

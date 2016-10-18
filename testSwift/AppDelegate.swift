@@ -68,3 +68,19 @@ func LLPrint<T>(_ message: T, method: String = #function, line: Int = #line)
         print("\(method)[\(line)]: \(message)")
     #endif
 }
+
+///获取屏幕宽度
+func getMainScreenWidth() -> CGFloat {
+    
+    LLPrint(UIScreen.main.bounds.width)
+    
+    return UIScreen.main.bounds.width
+}
+///获取屏幕高度
+func getMainScreenHeight() -> CGFloat {
+    return UIScreen.main.bounds.height
+}
+
+
+
+
