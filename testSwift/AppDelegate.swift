@@ -23,6 +23,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = LLMainViewController()
         window?.makeKeyAndVisible()
         
+        
+        //一般情况下设置全局性的属性, 最好放在AppDelegate中设置, 这样可以保证后续所有的操作都是设置之后的操作
+        UINavigationBar.appearance().tintColor = UIColor.orange
+        UITabBar.appearance().tintColor = UIColor.orange
+        
         return true
     }
 
@@ -71,9 +76,6 @@ func LLPrint<T>(_ message: T, method: String = #function, line: Int = #line)
 
 ///获取屏幕宽度
 func getMainScreenWidth() -> CGFloat {
-    
-    LLPrint(UIScreen.main.bounds.width)
-    
     return UIScreen.main.bounds.width
 }
 ///获取屏幕高度

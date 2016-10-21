@@ -10,6 +10,8 @@
 		5A39866F1D9BA843007872F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A39866E1D9BA843007872F6 /* AppDelegate.swift */; };
 		5A3986761D9BA843007872F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A3986751D9BA843007872F6 /* Assets.xcassets */; };
 		5A4576A01DAF9013004B9763 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A45769F1DAF9013004B9763 /* UIBarButtonItem+Extension.swift */; };
+		5A6750EE1DB8727500FADBF2 /* LLQRCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A6750ED1DB8727500FADBF2 /* LLQRCode.storyboard */; };
+		5A6750F01DB8747200FADBF2 /* LLQRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6750EF1DB8747200FADBF2 /* LLQRCodeViewController.swift */; };
 		5A7845A61DA9DD260036409F /* LLMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7845A51DA9DD260036409F /* LLMainViewController.swift */; };
 		5A7845A81DAA25090036409F /* LLHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7845A71DAA25090036409F /* LLHomeTableViewController.swift */; };
 		5A7845AA1DAA253F0036409F /* LLMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7845A91DAA253F0036409F /* LLMessageTableViewController.swift */; };
@@ -20,6 +22,7 @@
 		5AA6D2281DB4C538009E511B /* LLPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA6D2271DB4C538009E511B /* LLPopoverViewController.swift */; };
 		5AA6D22A1DB4C589009E511B /* LLPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA6D2291DB4C589009E511B /* LLPresentationController.swift */; };
 		5AA6D22C1DB4CEC2009E511B /* LLPresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA6D22B1DB4CEC2009E511B /* LLPresentationManager.swift */; };
+		5AF7F29D1DB9F85E00C443A4 /* LLQRCodeCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF7F29C1DB9F85E00C443A4 /* LLQRCodeCreateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,8 @@
 		5A3986751D9BA843007872F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A39867A1D9BA843007872F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A45769F1DAF9013004B9763 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		5A6750ED1DB8727500FADBF2 /* LLQRCode.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LLQRCode.storyboard; sourceTree = "<group>"; };
+		5A6750EF1DB8747200FADBF2 /* LLQRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLQRCodeViewController.swift; sourceTree = "<group>"; };
 		5A7845A51DA9DD260036409F /* LLMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLMainViewController.swift; sourceTree = "<group>"; };
 		5A7845A71DAA25090036409F /* LLHomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLHomeTableViewController.swift; sourceTree = "<group>"; };
 		5A7845A91DAA253F0036409F /* LLMessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLMessageTableViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +43,7 @@
 		5AA6D2271DB4C538009E511B /* LLPopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLPopoverViewController.swift; sourceTree = "<group>"; };
 		5AA6D2291DB4C589009E511B /* LLPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLPresentationController.swift; sourceTree = "<group>"; };
 		5AA6D22B1DB4CEC2009E511B /* LLPresentationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLPresentationManager.swift; sourceTree = "<group>"; };
+		5AF7F29C1DB9F85E00C443A4 /* LLQRCodeCreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLQRCodeCreateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +93,16 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		5A6750EC1DB86D6A00FADBF2 /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				5A6750ED1DB8727500FADBF2 /* LLQRCode.storyboard */,
+				5A6750EF1DB8747200FADBF2 /* LLQRCodeViewController.swift */,
+				5AF7F29C1DB9F85E00C443A4 /* LLQRCodeCreateViewController.swift */,
+			);
+			path = QRCode;
+			sourceTree = "<group>";
+		};
 		5A78459E1DA9DCC30036409F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +127,7 @@
 		5A7845A01DA9DCC30036409F /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				5A6750EC1DB86D6A00FADBF2 /* QRCode */,
 				5AA6D2231DB4C12F009E511B /* Popover */,
 				5A7845A71DAA25090036409F /* LLHomeTableViewController.swift */,
 			);
@@ -221,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AA6D2251DB4C162009E511B /* LLPopover.storyboard in Resources */,
+				5A6750EE1DB8727500FADBF2 /* LLQRCode.storyboard in Resources */,
 				5A3986761D9BA843007872F6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,9 +254,11 @@
 				5AA6D22A1DB4C589009E511B /* LLPresentationController.swift in Sources */,
 				5A7845A61DA9DD260036409F /* LLMainViewController.swift in Sources */,
 				5A7845A81DAA25090036409F /* LLHomeTableViewController.swift in Sources */,
+				5A6750F01DB8747200FADBF2 /* LLQRCodeViewController.swift in Sources */,
 				5AA6D22C1DB4CEC2009E511B /* LLPresentationManager.swift in Sources */,
 				5AA6D2221DB4A685009E511B /* TitleButton.swift in Sources */,
 				5A39866F1D9BA843007872F6 /* AppDelegate.swift in Sources */,
+				5AF7F29D1DB9F85E00C443A4 /* LLQRCodeCreateViewController.swift in Sources */,
 				5A4576A01DAF9013004B9763 /* UIBarButtonItem+Extension.swift in Sources */,
 				5A7845AC1DAA255C0036409F /* LLDiscoverTableViewController.swift in Sources */,
 				5A7845AA1DAA253F0036409F /* LLMessageTableViewController.swift in Sources */,
@@ -349,7 +369,7 @@
 				INFOPLIST_FILE = testSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = LL.testSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = bearer.emexpress.xx3700.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -365,7 +385,7 @@
 				INFOPLIST_FILE = testSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = LL.testSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = bearer.emexpress.xx3700.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;

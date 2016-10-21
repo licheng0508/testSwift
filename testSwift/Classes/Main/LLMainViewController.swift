@@ -12,9 +12,6 @@ class LLMainViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // 注意: Xocde7之前只有文字有效果, 还需要设置图片渲染模式
-        tabBar.tintColor = UIColor.orange
         
         // 1.添加所有子控制器
         addChildViewControllers()
