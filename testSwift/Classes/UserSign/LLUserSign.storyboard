@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="m8f-2H-kBt">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="7fX-Re-eKu">
+            <objects>
+                <navigationController id="m8f-2H-kBt" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ugJ-Z8-ARr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="L7U-mm-hjl" kind="relationship" relationship="rootViewController" id="yC8-dU-if6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4HU-Fk-YIf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1806" y="51"/>
+        </scene>
+        <!--User Sign View Controller-->
+        <scene sceneID="Yj7-gQ-uMC">
+            <objects>
+                <viewController id="L7U-mm-hjl" customClass="LLUserSignViewController" customModule="testSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mZM-bG-COj"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Hg-lM-qzy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pDV-BW-uVO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8G-4y-exe">
+                                <rect key="frame" x="157" y="319" width="62" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Vfq-9H-3CW"/>
+                                    <constraint firstAttribute="width" constant="62" id="exD-EE-fIs"/>
+                                </constraints>
+                                <state key="normal" title="微博授权"/>
+                                <connections>
+                                    <action selector="weiboSignClick" destination="L7U-mm-hjl" eventType="touchUpInside" id="UUZ-uF-uBR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="G8G-4y-exe" firstAttribute="centerY" secondItem="pDV-BW-uVO" secondAttribute="centerY" id="vC7-Gj-8yq"/>
+                            <constraint firstItem="G8G-4y-exe" firstAttribute="centerX" secondItem="pDV-BW-uVO" secondAttribute="centerX" id="vg7-r7-3HB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FFG-qY-2dK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LN5-j2-5Kc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-940" y="51"/>
+        </scene>
+    </scenes>
+</document>

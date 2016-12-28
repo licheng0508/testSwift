@@ -92,7 +92,7 @@ class LLHomeTableViewController: UITableViewController {
     /// 标题按钮
     private lazy var titleButton: TitleButton = {
         let btn = TitleButton()
-        btn.setTitle("阿狸小妖", for: UIControlState.normal)
+        btn.setTitle(UserAccount.loadUserAccount()?.screen_name, for: UIControlState.normal)
         btn.addTarget(self, action: #selector(LLHomeTableViewController.titleBtnClick(btn:)), for: UIControlEvents.touchUpInside)
         return btn
     }()

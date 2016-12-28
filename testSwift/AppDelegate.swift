@@ -16,21 +16,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        //初始化Window
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.backgroundColor = UIColor.white
-        
-        window?.rootViewController = LLMainViewController()
-        window?.makeKeyAndVisible()
-        
-        
+
         //一般情况下设置全局性的属性, 最好放在AppDelegate中设置, 这样可以保证后续所有的操作都是设置之后的操作
         UINavigationBar.appearance().tintColor = UIColor.orange
         UITabBar.appearance().tintColor = UIColor.orange
         
+        //注册监听
+        NotificationCenter.default.addObserver(self, selector: #selector(AppDelegate.changeRootViewController), name: NSNotification.Name(rawValue: LLSwitchRootViewController), object: nil)
+        
+        //初始化Window
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.backgroundColor = UIColor.white
+        
+        window?.rootViewController = defaultViewController()
+        window?.makeKeyAndVisible()
+        
         return true
     }
-
+    deinit{
+        
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
@@ -53,6 +60,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+
+}
+
+extension AppDelegate {
+
+    /// 切换根控制器
+    func changeRootViewController()
+    {
+        window?.rootViewController = LLMainViewController()
+    }
+    
+    /// 用于返回默认界面
+    func defaultViewController() -> UIViewController
+    {
+        // 1.判断是否登录
+        if UserAccount.isLogin()
+        {
+            return LLMainViewController()
+        }
+        // 没有登录
+        let sb = UIStoryboard(name: "LLUserSign", bundle: nil)
+        return sb.instantiateInitialViewController()!
+    }
 
 }
 

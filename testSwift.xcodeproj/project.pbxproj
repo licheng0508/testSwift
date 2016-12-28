@@ -7,8 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A044DE31DC9D98900A0BD22 /* LLOAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A044DE21DC9D98900A0BD22 /* LLOAuthViewController.swift */; };
+		5A044DE51DC9D99D00A0BD22 /* LLOAuth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A044DE41DC9D99D00A0BD22 /* LLOAuth.storyboard */; };
 		5A39866F1D9BA843007872F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A39866E1D9BA843007872F6 /* AppDelegate.swift */; };
 		5A3986761D9BA843007872F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A3986751D9BA843007872F6 /* Assets.xcassets */; };
+		5A40EDF91DDC42B200489931 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A40EDED1DDC42B200489931 /* AFHTTPSessionManager.m */; };
+		5A40EDFA1DDC42B200489931 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A40EDF01DDC42B200489931 /* AFNetworkReachabilityManager.m */; };
+		5A40EDFB1DDC42B200489931 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A40EDF21DDC42B200489931 /* AFSecurityPolicy.m */; };
+		5A40EDFC1DDC42B200489931 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A40EDF41DDC42B200489931 /* AFURLRequestSerialization.m */; };
+		5A40EDFD1DDC42B200489931 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A40EDF61DDC42B200489931 /* AFURLResponseSerialization.m */; };
+		5A40EDFE1DDC42B200489931 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A40EDF81DDC42B200489931 /* AFURLSessionManager.m */; };
+		5A40EE0A1DDC510200489931 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A40EE011DDC510200489931 /* SVIndefiniteAnimatedView.m */; };
+		5A40EE0B1DDC510200489931 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A40EE031DDC510200489931 /* SVProgressAnimatedView.m */; };
+		5A40EE0C1DDC510200489931 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5A40EE051DDC510200489931 /* SVProgressHUD.bundle */; };
+		5A40EE0D1DDC510200489931 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A40EE071DDC510200489931 /* SVProgressHUD.m */; };
+		5A40EE0E1DDC510200489931 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A40EE091DDC510200489931 /* SVRadialGradientLayer.m */; };
+		5A40EE101DDC515100489931 /* SVPHUBTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A40EE0F1DDC515100489931 /* SVPHUBTool.swift */; };
+		5A40EE121DDC562200489931 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A40EE111DDC562200489931 /* String+Extension.swift */; };
+		5A40EE141DDC632E00489931 /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A40EE131DDC632E00489931 /* UserAccount.swift */; };
+		5A4532B61E1367EA0082DAF9 /* LLUserSignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4532B51E1367EA0082DAF9 /* LLUserSignViewController.swift */; };
+		5A4532B81E1368030082DAF9 /* LLUserSign.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A4532B71E1368030082DAF9 /* LLUserSign.storyboard */; };
 		5A4576A01DAF9013004B9763 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A45769F1DAF9013004B9763 /* UIBarButtonItem+Extension.swift */; };
 		5A6750EE1DB8727500FADBF2 /* LLQRCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A6750ED1DB8727500FADBF2 /* LLQRCode.storyboard */; };
 		5A6750F01DB8747200FADBF2 /* LLQRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6750EF1DB8747200FADBF2 /* LLQRCodeViewController.swift */; };
@@ -22,14 +40,47 @@
 		5AA6D2281DB4C538009E511B /* LLPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA6D2271DB4C538009E511B /* LLPopoverViewController.swift */; };
 		5AA6D22A1DB4C589009E511B /* LLPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA6D2291DB4C589009E511B /* LLPresentationController.swift */; };
 		5AA6D22C1DB4CEC2009E511B /* LLPresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA6D22B1DB4CEC2009E511B /* LLPresentationManager.swift */; };
+		5AC7038D1DD1B3D900A723B3 /* AFNTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC7038C1DD1B3D900A723B3 /* AFNTool.swift */; };
+		5AC7038F1DD1B44400A723B3 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC7038E1DD1B44400A723B3 /* Common.swift */; };
 		5AF7F29D1DB9F85E00C443A4 /* LLQRCodeCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF7F29C1DB9F85E00C443A4 /* LLQRCodeCreateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A044DE21DC9D98900A0BD22 /* LLOAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLOAuthViewController.swift; sourceTree = "<group>"; };
+		5A044DE41DC9D99D00A0BD22 /* LLOAuth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LLOAuth.storyboard; sourceTree = "<group>"; };
 		5A39866B1D9BA843007872F6 /* testSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A39866E1D9BA843007872F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A3986751D9BA843007872F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A39867A1D9BA843007872F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A40EDE91DDC3D3400489931 /* testSwift-Briding-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "testSwift-Briding-Header.h"; sourceTree = "<group>"; };
+		5A40EDEC1DDC42B200489931 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		5A40EDED1DDC42B200489931 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		5A40EDEE1DDC42B200489931 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		5A40EDEF1DDC42B200489931 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		5A40EDF01DDC42B200489931 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		5A40EDF11DDC42B200489931 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		5A40EDF21DDC42B200489931 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		5A40EDF31DDC42B200489931 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		5A40EDF41DDC42B200489931 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		5A40EDF51DDC42B200489931 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		5A40EDF61DDC42B200489931 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		5A40EDF71DDC42B200489931 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		5A40EDF81DDC42B200489931 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		5A40EE001DDC510200489931 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		5A40EE011DDC510200489931 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		5A40EE021DDC510200489931 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		5A40EE031DDC510200489931 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		5A40EE041DDC510200489931 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		5A40EE051DDC510200489931 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		5A40EE061DDC510200489931 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		5A40EE071DDC510200489931 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		5A40EE081DDC510200489931 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		5A40EE091DDC510200489931 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		5A40EE0F1DDC515100489931 /* SVPHUBTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVPHUBTool.swift; sourceTree = "<group>"; };
+		5A40EE111DDC562200489931 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		5A40EE131DDC632E00489931 /* UserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
+		5A4532B51E1367EA0082DAF9 /* LLUserSignViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLUserSignViewController.swift; sourceTree = "<group>"; };
+		5A4532B71E1368030082DAF9 /* LLUserSign.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LLUserSign.storyboard; sourceTree = "<group>"; };
 		5A45769F1DAF9013004B9763 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 		5A6750ED1DB8727500FADBF2 /* LLQRCode.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LLQRCode.storyboard; sourceTree = "<group>"; };
 		5A6750EF1DB8747200FADBF2 /* LLQRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLQRCodeViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +94,8 @@
 		5AA6D2271DB4C538009E511B /* LLPopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLPopoverViewController.swift; sourceTree = "<group>"; };
 		5AA6D2291DB4C589009E511B /* LLPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLPresentationController.swift; sourceTree = "<group>"; };
 		5AA6D22B1DB4CEC2009E511B /* LLPresentationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLPresentationManager.swift; sourceTree = "<group>"; };
+		5AC7038C1DD1B3D900A723B3 /* AFNTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFNTool.swift; sourceTree = "<group>"; };
+		5AC7038E1DD1B44400A723B3 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		5AF7F29C1DB9F85E00C443A4 /* LLQRCodeCreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLQRCodeCreateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,6 +110,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A044DE11DC9D96F00A0BD22 /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				5A044DE21DC9D98900A0BD22 /* LLOAuthViewController.swift */,
+				5A044DE41DC9D99D00A0BD22 /* LLOAuth.storyboard */,
+				5A40EE131DDC632E00489931 /* UserAccount.swift */,
+			);
+			path = OAuth;
+			sourceTree = "<group>";
+		};
 		5A3986621D9BA843007872F6 = {
 			isa = PBXGroup;
 			children = (
@@ -84,11 +147,67 @@
 			path = testSwift;
 			sourceTree = "<group>";
 		};
+		5A40EDEA1DDC429E00489931 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				5A40EDFF1DDC510200489931 /* SVProgressHUD */,
+				5A40EDEB1DDC42B200489931 /* AFNetworking */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		5A40EDEB1DDC42B200489931 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				5A40EDEC1DDC42B200489931 /* AFHTTPSessionManager.h */,
+				5A40EDED1DDC42B200489931 /* AFHTTPSessionManager.m */,
+				5A40EDEE1DDC42B200489931 /* AFNetworking.h */,
+				5A40EDEF1DDC42B200489931 /* AFNetworkReachabilityManager.h */,
+				5A40EDF01DDC42B200489931 /* AFNetworkReachabilityManager.m */,
+				5A40EDF11DDC42B200489931 /* AFSecurityPolicy.h */,
+				5A40EDF21DDC42B200489931 /* AFSecurityPolicy.m */,
+				5A40EDF31DDC42B200489931 /* AFURLRequestSerialization.h */,
+				5A40EDF41DDC42B200489931 /* AFURLRequestSerialization.m */,
+				5A40EDF51DDC42B200489931 /* AFURLResponseSerialization.h */,
+				5A40EDF61DDC42B200489931 /* AFURLResponseSerialization.m */,
+				5A40EDF71DDC42B200489931 /* AFURLSessionManager.h */,
+				5A40EDF81DDC42B200489931 /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		5A40EDFF1DDC510200489931 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				5A40EE001DDC510200489931 /* SVIndefiniteAnimatedView.h */,
+				5A40EE011DDC510200489931 /* SVIndefiniteAnimatedView.m */,
+				5A40EE021DDC510200489931 /* SVProgressAnimatedView.h */,
+				5A40EE031DDC510200489931 /* SVProgressAnimatedView.m */,
+				5A40EE041DDC510200489931 /* SVProgressHUD-Prefix.pch */,
+				5A40EE051DDC510200489931 /* SVProgressHUD.bundle */,
+				5A40EE061DDC510200489931 /* SVProgressHUD.h */,
+				5A40EE071DDC510200489931 /* SVProgressHUD.m */,
+				5A40EE081DDC510200489931 /* SVRadialGradientLayer.h */,
+				5A40EE091DDC510200489931 /* SVRadialGradientLayer.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		5A4532B21E1367360082DAF9 /* UserSign */ = {
+			isa = PBXGroup;
+			children = (
+				5A4532B51E1367EA0082DAF9 /* LLUserSignViewController.swift */,
+				5A4532B71E1368030082DAF9 /* LLUserSign.storyboard */,
+			);
+			path = UserSign;
+			sourceTree = "<group>";
+		};
 		5A45769E1DAF8F82004B9763 /* Category */ = {
 			isa = PBXGroup;
 			children = (
 				5A45769F1DAF9013004B9763 /* UIBarButtonItem+Extension.swift */,
 				5AA6D2211DB4A685009E511B /* TitleButton.swift */,
+				5A40EE111DDC562200489931 /* String+Extension.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -106,6 +225,8 @@
 		5A78459E1DA9DCC30036409F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				5A4532B21E1367360082DAF9 /* UserSign */,
+				5A044DE11DC9D96F00A0BD22 /* OAuth */,
 				5A7845A11DA9DCC30036409F /* Main */,
 				5A7845A01DA9DCC30036409F /* Home */,
 				5A7845A21DA9DCC30036409F /* Message */,
@@ -161,7 +282,12 @@
 		5A7845A41DA9DCC30036409F /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				5A40EDEA1DDC429E00489931 /* Lib */,
 				5A45769E1DAF8F82004B9763 /* Category */,
+				5AC7038C1DD1B3D900A723B3 /* AFNTool.swift */,
+				5A40EE0F1DDC515100489931 /* SVPHUBTool.swift */,
+				5AC7038E1DD1B44400A723B3 /* Common.swift */,
+				5A40EDE91DDC3D3400489931 /* testSwift-Briding-Header.h */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -237,8 +363,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A4532B81E1368030082DAF9 /* LLUserSign.storyboard in Resources */,
+				5A40EE0C1DDC510200489931 /* SVProgressHUD.bundle in Resources */,
 				5AA6D2251DB4C162009E511B /* LLPopover.storyboard in Resources */,
 				5A6750EE1DB8727500FADBF2 /* LLQRCode.storyboard in Resources */,
+				5A044DE51DC9D99D00A0BD22 /* LLOAuth.storyboard in Resources */,
 				5A3986761D9BA843007872F6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,16 +382,33 @@
 				5AA6D2281DB4C538009E511B /* LLPopoverViewController.swift in Sources */,
 				5AA6D22A1DB4C589009E511B /* LLPresentationController.swift in Sources */,
 				5A7845A61DA9DD260036409F /* LLMainViewController.swift in Sources */,
+				5AC7038D1DD1B3D900A723B3 /* AFNTool.swift in Sources */,
+				5AC7038F1DD1B44400A723B3 /* Common.swift in Sources */,
 				5A7845A81DAA25090036409F /* LLHomeTableViewController.swift in Sources */,
 				5A6750F01DB8747200FADBF2 /* LLQRCodeViewController.swift in Sources */,
+				5A40EDFC1DDC42B200489931 /* AFURLRequestSerialization.m in Sources */,
+				5A40EE121DDC562200489931 /* String+Extension.swift in Sources */,
 				5AA6D22C1DB4CEC2009E511B /* LLPresentationManager.swift in Sources */,
+				5A40EE0E1DDC510200489931 /* SVRadialGradientLayer.m in Sources */,
+				5A40EE141DDC632E00489931 /* UserAccount.swift in Sources */,
+				5A40EDFB1DDC42B200489931 /* AFSecurityPolicy.m in Sources */,
 				5AA6D2221DB4A685009E511B /* TitleButton.swift in Sources */,
 				5A39866F1D9BA843007872F6 /* AppDelegate.swift in Sources */,
+				5A40EE0D1DDC510200489931 /* SVProgressHUD.m in Sources */,
+				5A40EDFA1DDC42B200489931 /* AFNetworkReachabilityManager.m in Sources */,
 				5AF7F29D1DB9F85E00C443A4 /* LLQRCodeCreateViewController.swift in Sources */,
+				5A4532B61E1367EA0082DAF9 /* LLUserSignViewController.swift in Sources */,
 				5A4576A01DAF9013004B9763 /* UIBarButtonItem+Extension.swift in Sources */,
+				5A40EDFE1DDC42B200489931 /* AFURLSessionManager.m in Sources */,
+				5A044DE31DC9D98900A0BD22 /* LLOAuthViewController.swift in Sources */,
 				5A7845AC1DAA255C0036409F /* LLDiscoverTableViewController.swift in Sources */,
+				5A40EE0A1DDC510200489931 /* SVIndefiniteAnimatedView.m in Sources */,
 				5A7845AA1DAA253F0036409F /* LLMessageTableViewController.swift in Sources */,
+				5A40EDF91DDC42B200489931 /* AFHTTPSessionManager.m in Sources */,
+				5A40EDFD1DDC42B200489931 /* AFURLResponseSerialization.m in Sources */,
 				5A7845AE1DAA25680036409F /* LLProfileTableViewController.swift in Sources */,
+				5A40EE0B1DDC510200489931 /* SVProgressAnimatedView.m in Sources */,
+				5A40EE101DDC515100489931 /* SVPHUBTool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,14 +509,17 @@
 		5A39867E1D9BA843007872F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = HM3SKD457V;
 				INFOPLIST_FILE = testSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bearer.emexpress.xx3700.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/testSwift/Classes/Tools/testSwift-Briding-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -379,14 +528,17 @@
 		5A39867F1D9BA843007872F6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = HM3SKD457V;
 				INFOPLIST_FILE = testSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bearer.emexpress.xx3700.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/testSwift/Classes/Tools/testSwift-Briding-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

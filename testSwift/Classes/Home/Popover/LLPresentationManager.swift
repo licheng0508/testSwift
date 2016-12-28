@@ -8,11 +8,6 @@
 
 import UIKit
 
-/// 自定转场展现
-let LLPresentationManagerDidPresented = "LLPresentationManagerDidPresented"
-/// 自定义转场消失
-let LLPresentationManagerDidDismissed = "LLPresentationManagerDismissed"
-
 class LLPresentationManager: NSObject ,UIViewControllerTransitioningDelegate ,UIViewControllerAnimatedTransitioning
 {
     /// 定义标记记录当前是否是展现
