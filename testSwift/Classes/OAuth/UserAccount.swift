@@ -78,7 +78,6 @@ class UserAccount: NSObject, NSCoding {
             // 直接返回
             return UserAccount.account
         }
-        LLPrint(UserAccount.filePath)
         // 2.尝试从文件中加载
         guard let account = NSKeyedUnarchiver.unarchiveObject(withFile: UserAccount.filePath) as? UserAccount else
         {

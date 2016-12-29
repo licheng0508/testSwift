@@ -12,6 +12,7 @@
 //添加自定义文件
 #import "AFNetworking.h"
 #import "SVProgressHUD.h"
+#import "UIImageView+WebCache.h"
 
 
 #endif /* testSwift_Briding_Header_h */

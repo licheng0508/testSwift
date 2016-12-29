@@ -10,6 +10,14 @@ import UIKit
 
 class LLHomeTableViewController: UITableViewController {
 
+    ///保存微博数据
+    var statuses : [StatusViewModel]?
+        {
+        didSet{
+            tableView.reloadData()
+        }
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,6 +27,14 @@ class LLHomeTableViewController: UITableViewController {
         // 2.注册通知
         NotificationCenter.default.addObserver(self, selector: #selector(LLHomeTableViewController.titleChange), name: NSNotification.Name(rawValue: LLPresentationManagerDidPresented), object: animatorManager)
         NotificationCenter.default.addObserver(self, selector: #selector(LLHomeTableViewController.titleChange), name: NSNotification.Name(rawValue: LLPresentationManagerDidDismissed), object: animatorManager)
+        
+        //3.注册cell
+        let cellNib = UINib(nibName: "LLHomeCell", bundle: nil)
+        tableView.register(cellNib, forCellReuseIdentifier: "LLHomeCell")
+        tableView.rowHeight = 300
+        
+        // 4.获取微博数据
+        loadData()
     }
     deinit
     {
@@ -27,6 +43,32 @@ class LLHomeTableViewController: UITableViewController {
     }
 
     // MARK: - 内部控制方法
+    private func loadData()
+    {
+        AFNTool.shareInstance.loadStatuses { (array, error) -> () in
+            // 1.安全校验
+            if error != nil
+            {
+                LLPrint("获取微博数据失败")
+                return
+            }
+            guard let arr = array else
+            {
+                return
+            }
+            // 2.将字典数组转换为模型数组
+            var models = [StatusViewModel]()
+            for dict in arr
+            {
+                let statusViewModel = StatusViewModel(status: StatusModel(dict: dict))
+                models.append(statusViewModel)
+            }
+            // 3.保存微博数据
+            self.statuses = models
+            
+        }
+    }
+
     /// 初始化导航条按钮
     private func setupNavgationItem() {
     
@@ -97,3 +139,35 @@ class LLHomeTableViewController: UITableViewController {
         return btn
     }()
 }
+
+extension LLHomeTableViewController
+{
+
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.statuses?.count ?? 0
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        //1.取出Cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "LLHomeCell", for: indexPath) as! LLHomeCell
+        
+        //2.设置数据
+        cell.viewModel = statuses![indexPath.row]
+        
+        //2.返回cell
+        return cell
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
