@@ -13,6 +13,7 @@
 #import "AFNetworking.h"
 #import "SVProgressHUD.h"
 #import "UIImageView+WebCache.h"
+#import "SDWebImageManager.h"
 
 
 #endif /* testSwift_Briding_Header_h */

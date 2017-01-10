@@ -68,6 +68,7 @@
 		5AC7038D1DD1B3D900A723B3 /* AFNTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC7038C1DD1B3D900A723B3 /* AFNTool.swift */; };
 		5AC7038F1DD1B44400A723B3 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC7038E1DD1B44400A723B3 /* Common.swift */; };
 		5AF7F29D1DB9F85E00C443A4 /* LLQRCodeCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF7F29C1DB9F85E00C443A4 /* LLQRCodeCreateViewController.swift */; };
+		5AF8151F1E1B91EF0076565D /* LLHomePictureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AF8151E1E1B91EF0076565D /* LLHomePictureCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -167,6 +168,7 @@
 		5AC7038C1DD1B3D900A723B3 /* AFNTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFNTool.swift; sourceTree = "<group>"; };
 		5AC7038E1DD1B44400A723B3 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		5AF7F29C1DB9F85E00C443A4 /* LLQRCodeCreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLQRCodeCreateViewController.swift; sourceTree = "<group>"; };
+		5AF8151E1E1B91EF0076565D /* LLHomePictureCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LLHomePictureCell.xib; path = Popover/LLHomePictureCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -369,11 +371,12 @@
 				5A6750EC1DB86D6A00FADBF2 /* QRCode */,
 				5AA6D2231DB4C12F009E511B /* Popover */,
 				5A7845A71DAA25090036409F /* LLHomeTableViewController.swift */,
+				5A4532BD1E13BAD00082DAF9 /* LLHomeCell.swift */,
+				5A4532BE1E13BAD00082DAF9 /* LLHomeCell.xib */,
+				5AF8151E1E1B91EF0076565D /* LLHomePictureCell.xib */,
 				5A4532BB1E13A5150082DAF9 /* UserModel.swift */,
 				5A4532B91E13A4B10082DAF9 /* StatusModel.swift */,
 				5A4533031E150F6E0082DAF9 /* StatusViewModel.swift */,
-				5A4532BD1E13BAD00082DAF9 /* LLHomeCell.swift */,
-				5A4532BE1E13BAD00082DAF9 /* LLHomeCell.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -489,6 +492,7 @@
 				5A4532B81E1368030082DAF9 /* LLUserSign.storyboard in Resources */,
 				5A40EE0C1DDC510200489931 /* SVProgressHUD.bundle in Resources */,
 				5AA6D2251DB4C162009E511B /* LLPopover.storyboard in Resources */,
+				5AF8151F1E1B91EF0076565D /* LLHomePictureCell.xib in Resources */,
 				5A4532C01E13BAD00082DAF9 /* LLHomeCell.xib in Resources */,
 				5A6750EE1DB8727500FADBF2 /* LLQRCode.storyboard in Resources */,
 				5A044DE51DC9D99D00A0BD22 /* LLOAuth.storyboard in Resources */,

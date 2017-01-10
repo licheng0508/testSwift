@@ -31,7 +31,13 @@ class LLHomeTableViewController: UITableViewController {
         //3.注册cell
         let cellNib = UINib(nibName: "LLHomeCell", bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: "LLHomeCell")
-        tableView.rowHeight = 300
+        
+        //预计行高
+        tableView.estimatedRowHeight = 400
+        //自动计算行高
+//        tableView.rowHeight = UITableViewAutomaticDimension
+        //隐藏分割线
+        tableView.separatorStyle = UITableViewCellSeparatorStyle.none
         
         // 4.获取微博数据
         loadData()
@@ -64,9 +70,46 @@ class LLHomeTableViewController: UITableViewController {
                 models.append(statusViewModel)
             }
             // 3.保存微博数据
-            self.statuses = models
+//            self.statuses = models
+            
+            //4.缓存微博所有配图
+            self.cachesImages(viewModels: models)
             
         }
+    }
+    
+    ///缓存微博所有配图
+    private func cachesImages(viewModels: [StatusViewModel])
+    {
+        //0.创建一个组
+        let group = DispatchGroup()
+        
+        for viewModel in viewModels
+        {
+            // 1.从模型中取出配图数组
+            guard let picurls = viewModel.thumbnail_pic
+                else
+            {
+                // 如果当前微博没有配图就跳过, 继续下载下一个模型的
+                continue
+            }
+            // 2.遍历配图数组下载图片
+            for url in picurls
+            {
+                // 将当前的下载操作添加到组中
+                group.enter()
+                
+                // 3.利用SDWebImage下载图片
+                SDWebImageDownloader.shared().downloadImage(with: url as URL, options: SDWebImageDownloaderOptions.init(rawValue: 0), progress: nil, completed: { (image, _, error, finished) in
+                    group.leave()
+                })
+            }
+        }
+        
+        // 监听下载操作
+        group.notify(queue: DispatchQueue.main, execute: {
+            self.statuses = viewModels
+        })
     }
 
     /// 初始化导航条按钮
@@ -138,6 +181,9 @@ class LLHomeTableViewController: UITableViewController {
         btn.addTarget(self, action: #selector(LLHomeTableViewController.titleBtnClick(btn:)), for: UIControlEvents.touchUpInside)
         return btn
     }()
+    
+    /// 缓存行高
+    var rowHeightCaches =  [String: CGFloat]()
 }
 
 extension LLHomeTableViewController
@@ -156,6 +202,36 @@ extension LLHomeTableViewController
         
         //2.返回cell
         return cell
+    }
+    
+    //返回行高
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        let viewModel = statuses![indexPath.row]
+        // 1.从缓存中获取行高
+        guard let height = rowHeightCaches[viewModel.status.idstr ?? "-1"] else
+        {
+            // 缓存中没有行高
+            // 2.计算行高
+            // 2.1获取当前行对应的cell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "LLHomeCell") as! LLHomeCell
+            
+            // 2.1缓存行高
+            let  temp = cell.calculateRowHeight(viewModel: viewModel)
+            
+            rowHeightCaches[viewModel.status.idstr ?? "-1"] = temp
+            
+            // 3.返回行高
+            return temp
+        }
+        // 缓存中有就直接返回缓存中的高度
+        return height
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // 释放缓存数据
+        rowHeightCaches.removeAll()
     }
     
 }

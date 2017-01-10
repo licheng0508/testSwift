@@ -25,6 +25,9 @@ class StatusModel: NSObject {
     /// 微博作者的用户信息
     var user: UserModel?
     
+    /// 配图数组
+    var pic_urls: [[String: AnyObject]]?
+    
     init(dict: [String: AnyObject])
     {
         super.init()
