@@ -41,6 +41,8 @@ class LLHomeTableViewController: UITableViewController {
         
         // 4.获取微博数据
         loadData()
+        
+        print("test")
     }
     deinit
     {
