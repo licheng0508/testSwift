@@ -183,11 +183,12 @@ class LLHomePictureCell: UICollectionViewCell {
         
         didSet {
             
-            customIconImageView.sd_setImage(with: url as? URL)
+            customIconImageView.sd_setImage(with: url as URL?)
+            
         }
     }
     
-        @IBOutlet weak var customIconImageView: UIImageView!
+    @IBOutlet weak var customIconImageView: UIImageView!
 }
 
 
