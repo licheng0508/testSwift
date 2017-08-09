@@ -31,6 +31,7 @@ class AFNTool: AFHTTPSessionManager {
         
         //1.准备路径
         let path = "2/statuses/home_timeline.json"
+        
         //2.准备参数
         let parameters = ["access_token": UserAccount.loadUserAccount()?.access_token!]
         //3.发送GET请求
